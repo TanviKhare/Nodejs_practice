@@ -67,13 +67,14 @@ app.get('/submitted',(req,res)=>{    // whenever the form route is chosen, the f
     });
 });
 */
-app.post('/submitted',(req,res)=>{  
+app.post('/submit',(req,res)=>{  
     console.log(req.body);
     res.render('index',{title:'Data Saved',message:'Data saved successfully!'})
     var sql = "INSERT INTO users VALUES(req.body.username,req.body.emailID)"
     mysqlConn.query('SELECT * FROM users',(err,rows,fields)=>{
-        if(!err)
+        if(!err){
         res.send(rows);
+        res.redirect('/submitted.html')}
         else
         console.log(err);
     });
