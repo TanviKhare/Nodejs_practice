@@ -1,0 +1,17 @@
+npm init --y
+start in package.son = ""
+npm start
+npm install express-handlebars --save
+npm install cors --save
+npm install morgan --save
+npm install mysql2 --save
+npm install dotenv --save
+npm install ejs --save
+npm install cookie-parser --save
+npm install express-flash --save
+npm install express-session --save
+npm install path --save
+npm install net --save
+npm install --save-dev nodemon / npm install -g nodemon
+nodemon index.js
+nodemon version
